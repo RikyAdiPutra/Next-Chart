@@ -1,3 +1,9 @@
+import ChartBar from "./components/Bar";
+
 export default function Home() {
-  return <div>Chart NextJS</div>;
+  return (
+    <div>
+      <ChartBar />
+    </div>
+  );
 }

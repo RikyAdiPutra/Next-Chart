@@ -1,3 +1,5 @@
+import BarGrafik from "./Chart";
+
 const BottomSection = () => {
   return (
     <div>
@@ -71,7 +73,11 @@ const RightSection = () => {
 };
 
 const ChartDetail = () => {
-  return <div className="bg-cyan-500 w-[100%]">CHART DETAIL</div>;
+  return (
+    <div className="w-[100%]">
+      <BarGrafik />
+    </div>
+  );
 };
 
 const SideBar = () => {

@@ -57,7 +57,7 @@ const BottomSection = () => {
 
 const RightSection = () => {
   return (
-    <div className="w-[70%] bg-gray-400 p-4">
+    <div className="w-[30%] bg-gray-400 p-4">
       <div className="flex flex-col gap-2">
         <div className="mb-4">
           <div className="w-[150px] h-[50px] bg-slate-600 rounded-xl"></div>
@@ -74,7 +74,7 @@ const RightSection = () => {
 
 const ChartDetail = () => {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] flex items-center">
       <BarGrafik />
     </div>
   );
@@ -117,7 +117,7 @@ const ChartDasboard = () => {
         <SideBar />
         <div>
           <div>
-            <div className="flex w-[850px] h-[400px]">
+            <div className="flex w-[850px] h-[350px]">
               <ChartDetail />
               <RightSection />
             </div>

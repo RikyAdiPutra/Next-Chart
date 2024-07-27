@@ -1,9 +1,9 @@
-import ChartBar from "./components/Bar";
+import ChartDasboard from "./components/DashboardChart";
 
 export default function Home() {
   return (
     <div>
-      <ChartBar />
+      <ChartDasboard />
     </div>
   );
 }

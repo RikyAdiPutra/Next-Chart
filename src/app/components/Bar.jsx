@@ -7,22 +7,27 @@ const ChartBar = () => {
   const data = {
     datasets: [
       {
-        label: "Penjualan Per 6 Bulan 2023",
-        data: [65, 59, 80, 81, 56, 55],
-        backgroundColor: [
-          "#f5ec42",
-          "#57f542",
-          "#42f5c5",
-          "#42a4f5",
-          "#f542f5",
-        ],
+        label: "Example",
+        data: [10, 15],
       },
     ],
-    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
+    labels: ["A", "B"],
+  };
+
+  const options = {
+    plugins: {
+      legend: {
+        labels: {
+          color: "red",
+        },
+      },
+    },
   };
   return (
-    <div>
-      <Bar data={data} />
+    <div className="flex justify-center items-center h-screen">
+      <div className="w-[500px] bg-gray-200">
+        <Bar data={data} options={options} />
+      </div>
     </div>
   );
 };

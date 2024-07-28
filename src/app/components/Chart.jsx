@@ -10,14 +10,41 @@ const BarGrafik = () => {
   const data = {
     datasets: [
       {
+        label: "Foods & Drinks",
         data: productsSales,
+        backgroundColor: [
+          "#a83293",
+          "#6632a8",
+          "#3281a8",
+          "#3242a8",
+          "#a83277",
+          "#32a883",
+          "#3ea832",
+          "#a8a832",
+          "#a86932",
+          "#329ea8",
+        ],
       },
     ],
     labels: productsName,
   };
+
+  const options = {
+    plugins: {
+      legend: {
+        labels: {
+          color: "black",
+          boxWidth: 0,
+        },
+      },
+    },
+    layout: {
+      padding: 20,
+    },
+  };
   return (
     <div className="w-full h-full">
-      <Bar data={data} />
+      <Bar data={data} options={options} />
     </div>
   );
 };

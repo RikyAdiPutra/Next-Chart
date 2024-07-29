@@ -49,6 +49,20 @@ const BottomSection = () => {
             <td className="w-32 h-12 bg-gray-800 border-4 border-gray-300"></td>
             <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
           </tr>
+          <tr>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-800 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-800 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+          </tr>
+          <tr>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-800 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-800 border-4 border-gray-300"></td>
+            <td className="w-32 h-12 bg-gray-600 border-4 border-gray-300"></td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -111,7 +125,7 @@ const Navbar = () => {
 
 const ChartDasboard = () => {
   return (
-    <div className="max-w-[1100px] mx-auto">
+    <div>
       <Navbar />
       <main className="flex">
         <SideBar />
